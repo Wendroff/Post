@@ -1,0 +1,6 @@
+//This is the control file for Mypost_parallel (post processer code for hpMusic)
+file_start       =3290000
+file_end         =3290000
+file_num_interval=10000
+proc_num         =1
+suffix           =_aver.dat

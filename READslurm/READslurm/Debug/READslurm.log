@@ -1,0 +1,18 @@
+﻿生成启动时间为 2017/2/26 20:10:06。
+     1>项目“H:\Work\StandardCode\CPR\Post\READslurm\READslurm\READslurm.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\READslurm.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IE:\ResearchSoftware\vs2012\VC\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /D _UNICODE /D UNICODE /D "C:\Program Files (x86)\VTK\include\vtk-5.10" /Gm /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt READslurm.cpp
+         READslurm.cpp
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Work\StandardCode\CPR\Post\READslurm\Debug\READslurm.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\Work\StandardCode\CPR\Post\READslurm\Debug\READslurm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Work\StandardCode\CPR\Post\READslurm\Debug\READslurm.lib" /MACHINE:X86 Debug\READslurm.obj
+         READslurm.vcxproj -> H:\Work\StandardCode\CPR\Post\READslurm\Debug\READslurm.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\READslurm.unsuccessfulbuild”。
+         正在对“Debug\READslurm.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“H:\Work\StandardCode\CPR\Post\READslurm\READslurm\READslurm.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.88

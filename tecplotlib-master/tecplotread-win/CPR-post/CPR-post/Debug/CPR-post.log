@@ -1,0 +1,37 @@
+﻿生成启动时间为 2017/2/26 20:54:28。
+     1>项目“H:\Work\StandardCode\CPR\Post\tecplotlib-master\tecplotread-win\CPR-post\CPR-post\CPR-post.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\CPR-post.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IE:\ResearchSoftware\vs2012\VC\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /D _UNICODE /D UNICODE /D "C:\Program Files (x86)\VTK\include\vtk-5.10" /Gm /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt TecplotParser.cpp
+         TecplotParser.cpp
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(51): error C2065: “igzstream”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(51): error C2146: 语法错误: 缺少“;”(在标识符“file”的前面)
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(51): error C2065: “file”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(53): error C2065: “igzstream”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(53): error C2146: 语法错误: 缺少“;”(在标识符“files”的前面)
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(53): error C3861: “files”: 找不到标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(55): error C2065: “files”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(55): error C2228: “.tellg”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(56): error C2065: “files”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(56): error C2228: “.seekg”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(57): error C2065: “files”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(57): error C2228: “.tellg”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(58): error C2065: “files”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(58): error C2228: “.close”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(61): error C2065: “file”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(61): error C2228: “.open”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(63): error C2065: “file”: 未声明的标识符
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(63): error C2228: “.eof”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>h:\work\standardcode\cpr\post\tecplotlib-master\tecplotread-win\cpr-post\cpr-post\tecplotparser.cpp(63): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+     1>已完成生成项目“H:\Work\StandardCode\CPR\Post\tecplotlib-master\tecplotread-win\CPR-post\CPR-post\CPR-post.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.24

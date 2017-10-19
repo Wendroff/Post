@@ -1,0 +1,21 @@
+﻿生成启动时间为 2017/2/28 21:18:15。
+     1>项目“H:\Work\StandardCode\CPR\Post\MyPost\MyPost\MyPost.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\MyPost.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IE:\ResearchSoftware\vs2012\VC\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /D _UNICODE /D UNICODE /D "C:\Program Files (x86)\VTK\include\vtk-5.10" /Gm /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CPR_data.cpp
+         CPR_data.cpp
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Work\StandardCode\CPR\Post\MyPost\Debug\MyPost.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\Work\StandardCode\CPR\Post\MyPost\Debug\MyPost.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Work\StandardCode\CPR\Post\MyPost\Debug\MyPost.lib" /MACHINE:X86 Debug\CPR_data.obj
+         Debug\main_MyPost.obj
+         Debug\Point.obj
+         Debug\Y_height.obj
+         MyPost.vcxproj -> H:\Work\StandardCode\CPR\Post\MyPost\Debug\MyPost.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\MyPost.unsuccessfulbuild”。
+         正在对“Debug\MyPost.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“H:\Work\StandardCode\CPR\Post\MyPost\MyPost\MyPost.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.26

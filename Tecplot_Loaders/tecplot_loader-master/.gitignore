@@ -1,0 +1,15 @@
+*.o
+*.so
+*.pyc
+lex.yy.c
+*.tab.c
+*.tab.h
+*_wrap.cxx
+tecplot_loader
+tecplot_loader.py
+__pycache__/
+tecplot_loader.creator
+tecplot_loader.creator.user
+tecplot_loader.config
+tecplot_loader.includes
+tecplot_loader.files

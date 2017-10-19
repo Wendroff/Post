@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ "$1" == "cpp" ]; then
+	LD_LIBRARY_PATH=. ./tecplot_loader
+else LD_LIBRARY_PATH=. python main.py
+fi

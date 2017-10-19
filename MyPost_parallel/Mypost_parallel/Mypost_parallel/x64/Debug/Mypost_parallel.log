@@ -1,0 +1,30 @@
+﻿生成启动时间为 2017/6/15 13:50:56。
+     1>项目“H:\Work\StandardCode\CPR\Post\MyPost_parallel\Mypost_parallel\Mypost_parallel\Mypost_parallel.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“x64\Debug\Mypost_parallel.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“x64\Debug\Mypost_parallel.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Intel\impi_5.0.1\intel64\include" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt CPR_data.cpp main_MyPost.cpp Point.cpp Y_height.cpp
+         Y_height.cpp
+         Point.cpp
+         main_MyPost.cpp
+     1>main_MyPost.cpp(76): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+         CPR_data.cpp
+     1>CPR_data.cpp(55): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+     1>CPR_data.cpp(171): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+         正在生成代码...
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Work\StandardCode\CPR\Post\MyPost_parallel\Mypost_parallel\x64\Debug\Mypost_parallel.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\impi_5.0.1\intel64\lib" impi.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\Work\StandardCode\CPR\Post\MyPost_parallel\Mypost_parallel\x64\Debug\Mypost_parallel.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Work\StandardCode\CPR\Post\MyPost_parallel\Mypost_parallel\x64\Debug\Mypost_parallel.lib" /MACHINE:X64 x64\Debug\CPR_data.obj
+         x64\Debug\main_MyPost.obj
+         x64\Debug\Point.obj
+         x64\Debug\Y_height.obj
+         Mypost_parallel.vcxproj -> H:\Work\StandardCode\CPR\Post\MyPost_parallel\Mypost_parallel\x64\Debug\Mypost_parallel.exe
+       FinalizeBuildStatus:
+         正在删除文件“x64\Debug\Mypost_parallel.unsuccessfulbuild”。
+         正在对“x64\Debug\Mypost_parallel.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“H:\Work\StandardCode\CPR\Post\MyPost_parallel\Mypost_parallel\Mypost_parallel\Mypost_parallel.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.74
