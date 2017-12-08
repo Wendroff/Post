@@ -6,8 +6,16 @@ Created on Wed Dec  6 19:47:17 2017
 """
 
 import pandas as pd
-filename   = '..\\..\\Data_Post\\input\\sol_tec_7300000_aver_structure.dat'
-outputfile = '..\\..\\Data_Post\\St_aver_output\\output.dat'
+import sys
+
+
+if (len(sys.argv) < 2) :
+    print('Test mode \n')
+    filename   = '..\\..\\Data_Post\\input\\sol_tec_7300000_aver_structure.dat'
+    outputfile = '..\\..\\Data_Post\\St_aver_output\\output.dat'
+else:
+    filename   = sys.argv[1]
+    outputfile = 'output.dat'
 precision = 12 # The precision in the original file
 test = open(filename)
 a = test.readline()
