@@ -15,7 +15,7 @@ int main(int argc,char *argv[]){
 	double    t,T;
 	int       iter;
 	double    dt;
-
+	cout<<"Version: 2017-12-08-(1)"<<endl;
 	//cout.precision(12);
 	output.precision(12);
 	//time.precision(12);
