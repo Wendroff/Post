@@ -24,7 +24,7 @@ a = a[index_equal+1:]
 a = a.split()
 test.close()
 del index_equal
-
+print("Reading "+ filename)
 A = pd.read_table(filename,skiprows=[0, 1],names=a,sep='\s+')
 del A['x'],A['cell'],A['order_cell'],A['n_repeat']
 A['uu'] = A['uu'] + A['U_aver'] **2
@@ -39,6 +39,7 @@ size_= grouped.size()
 
 #Since the numerical residual, sometimes the y z of a same mesh point are different
 #reducing the precision can solve this problem
+print('Averaging Data ...')
 while (size_.min() < size_.max()):
     #print([size_.min(),' < ',size_.max()])
     precision -= 1
@@ -57,6 +58,7 @@ aver['vw'] = aver['vw'] - aver['V_aver'] * aver['W_aver']
 #size_.reset_index(inplace=True)
 #size_.to_csv('size.csv')
 data_str = aver.to_csv(sep=' ',header=False,index=False)
+print('Writing to '+ outputfile)
 output = open(outputfile,'w')
 header = 'VARIABLES = '
 for name in aver.columns:
@@ -69,3 +71,4 @@ header = 'ZONE F = POINT I = '+  str(i) +' J = ' + str(j) + ' \n'
 output.write(header)
 output.write(data_str)
 output.close()
+print('Job Done!')
