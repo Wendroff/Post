@@ -18,6 +18,8 @@
 #include<mpi.h>
 #ifdef __linux__
 #include<unistd.h>
+#include <sys/types.h>  
+#include <sys/stat.h> 
 #endif
 #include "Point.h"
 #include "CPR_data.h"
@@ -37,6 +39,10 @@ int main(int argc, char* argv[]){
 	} catch (runtime_error err){
 		cout<<err.what()<<endl;
 		return -1;
+	}
+	int stat = access("../sol_structure",F_OK);
+	if (stat == -1){
+		mkdir("../sol_structure",S_IRWXU);
 	}
 	MPI_Barrier(MPI_COMM_WORLD);
 	#ifdef __linux__
