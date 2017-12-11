@@ -87,18 +87,18 @@ int main(int argc, char* argv[]){
 		//int pos = filename.find(".");
 		
 		if (control_in.suffix != "_aver.dat"){
-			ss<<filename.substr(0,pos)<<"_structure.dat";
+			ss<<"../sol_structure/"<<filename.substr(0,pos)<<"_structure.dat";
 			test.structure_output(ss.str());
 
 			ss.str("");//Çå¿Õ
-			ss<<filename.substr(0,pos)<<"_averageXZ.dat";
+			ss<<"../sol_structure/"<<filename.substr(0,pos)<<"_averageXZ.dat";
 			test.average_xz(ss.str());
 		} else {
 			try{
-				ss<<filename.substr(0,pos)<<"_structure.dat";
+				ss<<"../sol_structure/"<<filename.substr(0,pos)<<"_structure.dat";
 				test.structure_output(ss.str());
 				ss.str("");//Çå¿Õ
-				ss<<filename.substr(0,pos)<<"_averageXZ.dat";
+				ss<<"../sol_structure/"<<filename.substr(0,pos)<<"_averageXZ.dat";
 				test.average_xz_averonly(ss.str());
 			} catch (runtime_error err){
 				cout<<err.what()<<endl;
