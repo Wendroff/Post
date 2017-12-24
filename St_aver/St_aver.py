@@ -26,13 +26,18 @@ test.close()
 del index_equal
 print("Reading "+ filename)
 A = pd.read_table(filename,skiprows=[0, 1],names=a,sep='\s+')
+#_aver.dat file or not?
+flag_aver = (filename[-19:] == '_aver_structure.dat')
+print('Averaged file or not?')
+print(flag_aver)
 del A['x'],A['cell'],A['order_cell'],A['n_repeat']
-A['uu'] = A['uu'] + A['U_aver'] **2
-A['vv'] = A['vv'] + A['V_aver'] **2
-A['ww'] = A['ww'] + A['W_aver'] **2
-A['uv'] = A['uv'] + A['U_aver'] * A['V_aver']
-A['uw'] = A['uw'] + A['U_aver'] * A['W_aver']
-A['vw'] = A['vw'] + A['V_aver'] * A['W_aver']
+if (flag_aver):
+    A['uu'] = A['uu'] + A['U_aver'] **2
+    A['vv'] = A['vv'] + A['V_aver'] **2
+    A['ww'] = A['ww'] + A['W_aver'] **2
+    A['uv'] = A['uv'] + A['U_aver'] * A['V_aver']
+    A['uw'] = A['uw'] + A['U_aver'] * A['W_aver']
+    A['vw'] = A['vw'] + A['V_aver'] * A['W_aver']
 
 grouped = A.groupby(['y','z'])
 size_= grouped.size()
@@ -49,12 +54,13 @@ while (size_.min() < size_.max()):
 (j,i) = size_.unstack().shape
 aver = grouped.mean()
 aver.reset_index(inplace=True)
-aver['uu'] = aver['uu'] - aver['U_aver'] **2
-aver['vv'] = aver['vv'] - aver['V_aver'] **2
-aver['ww'] = aver['ww'] - aver['W_aver'] **2
-aver['uv'] = aver['uv'] - aver['U_aver'] * aver['V_aver']
-aver['uw'] = aver['uw'] - aver['U_aver'] * aver['W_aver']
-aver['vw'] = aver['vw'] - aver['V_aver'] * aver['W_aver']
+if (flag_aver):
+    aver['uu'] = aver['uu'] - aver['U_aver'] **2
+    aver['vv'] = aver['vv'] - aver['V_aver'] **2
+    aver['ww'] = aver['ww'] - aver['W_aver'] **2
+    aver['uv'] = aver['uv'] - aver['U_aver'] * aver['V_aver']
+    aver['uw'] = aver['uw'] - aver['U_aver'] * aver['W_aver']
+    aver['vw'] = aver['vw'] - aver['V_aver'] * aver['W_aver']
 #size_.reset_index(inplace=True)
 #size_.to_csv('size.csv')
 data_str = aver.to_csv(sep=' ',header=False,index=False)
